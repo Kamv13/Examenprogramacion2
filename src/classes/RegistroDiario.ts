@@ -5,7 +5,7 @@ export class RegistroDiario {
 
     agregarRegistro(registro: IRegistroConsumo): void {
         this.registros.push(registro)
-        console.log(`Se agrego el registro de consumo para ${registro.dispositivo}`)
+        console.log(`Se agrego el registro de consumo para ${registro.dispositivo.nombre}`)
     }
 
     eliminarRegistro(fecha: string, dispositivoNombre: string): void {
