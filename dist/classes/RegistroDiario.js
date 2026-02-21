@@ -7,7 +7,7 @@ class RegistroDiario {
     }
     agregarRegistro(registro) {
         this.registros.push(registro);
-        console.log(`Se agrego el registro de consumo para ${registro.dispositivo}`);
+        console.log(`Se agrego el registro de consumo para ${registro.dispositivo.nombre}`);
     }
     eliminarRegistro(fecha, dispositivoNombre) {
         this.registros = this.registros.filter(r => {
